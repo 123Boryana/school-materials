@@ -1,0 +1,209 @@
+/* Dashboard.css */
+
+/* Global styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Dashboard container */
+.dashboard-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title and subtitle */
+.dashboard-title {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.dashboard-subtitle {
+  text-align: center;
+  font-size: 1.5em;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+/* Button to toggle form */
+.toggle-form-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.toggle-form-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Form styling */
+.request-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.1em;
+  color: #555;
+  margin-bottom: 5px;
+}
+
+.input-field {
+  padding: 8px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #007bff;
+}
+
+.submit-btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Layout for content */
+.dashboard-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+/* Table styling */
+.request-table-container {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.request-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.request-table th,
+.request-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.request-table th {
+  background-color: #007bff;
+  color: white;
+}
+
+.request-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+.request-table td {
+  font-size: 1.1em;
+}
+
+.ads-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.ad-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 250px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ad-card img {
+  width: 100%;         
+  height: 150px;       
+  object-fit: cover;   
+  border-radius: 8px;
+}
+
+.ad-card p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+  font-weight: bold;
+}
+
+@media (max-width: 900px) {
+  .dashboard-content {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .request-table-container {
+    margin-right: 0;
+  }
+
+  .ads-cardholder {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .input-field {
+    font-size: 0.9em;
+  }
+
+  .submit-btn {
+    font-size: 1em;
+  }
+
+  .request-table th,
+  .request-table td {
+    font-size: 1em;
+    padding: 10px;
+  }
+}
